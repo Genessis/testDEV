@@ -1,0 +1,5 @@
+El sitio fue realizado en Django con python 2.7.
+
+Para correrlo, ejecutar el siguiente comando dentro del directorio testSite:
+
+python manage.py runserver
