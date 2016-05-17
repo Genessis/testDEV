@@ -1,0 +1,126 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test DV | Search</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static "home/css/stylesheet.css" %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</head>
+
+<body>
+
+  <div>
+  	<header>
+    <!--Barra de búsqueda-->
+      <div class="container">
+        <div class="row">
+              <div class="col-sm-4 col-sm-offset-8">
+                  <div id="imaginary_container"> 
+                      <div class="input-group stylish-input-group">
+                          <input type="text" class="form-control"  placeholder="Search for tweets" >
+                          <span class="input-group-addon">
+                              <button type="submit">
+                                <a href="http://127.0.0.1:8000/search/"><span class="glyphicon glyphicon-search"></span></a>
+                              </button>  
+                          </span>
+                      </div>
+                  </div>
+              </div>
+        </div>
+      </div>
+      <!-- Imagenes -->
+      <a href="http://127.0.0.1:8000/">
+        <img src="{% static "home/img/test.png" %}" class="center-block"/>
+      </a>
+      <img src="{% static "home/img/avatar.png" %}" class="center-block"/>
+  	</header>
+
+    <section id="main">
+      <div class="container">
+        <div class="row">
+            <div style="padding-top: 5%; padding-bottom: 5%" class="col-xs-8 col-xs-offset-2 col-sm-4 col-sm-offset-4 text-center">
+              <a class="twitter-timeline" href="https://twitter.com/search?q=Venezuela" data-widget-id="732343772290424832">Tweets about Venezuela</a>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <div class="container">
+            <div class="row wow fadeIn no-margin" data-wow-duration="3s">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-center">
+                    <h1 class="section-heading">contact me</h1><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name" id="name"
+                                           required
+                                           data-validation-required-message="Please, enter yor name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-mail" id="email"
+                                           required
+                                           data-validation-required-message="Please, enter your email.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Company" id="company"
+                                           required
+                                           data-validation-required-message="Please, enter your company's name.">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message" id="message" rows="6" required
+                                              data-validation-required-message="Please, enter your message  ."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-right">
+                                <div id="success"></div>
+                                <button class="btn btn-primary btn-xl" id="send">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <p>copyright 2016 IDBC Group - Test Site</p>
+          </div>
+          <div class="col-md-2 col-md-offset-4">
+            <a href="https://ve.linkedin.com/in/génessis-sánchez-b80809100">
+              <img src="{% static "home/img/linkedin.png" %}" />
+            </a>
+            <a href="https://github.com/Genessis">
+              <img src="{% static "home/img/github.png" %}" />
+            </a>
+            <a href="https://instagram.com/gennysanchez">
+              <img src="{% static "home/img/instagram.png" %}" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
+

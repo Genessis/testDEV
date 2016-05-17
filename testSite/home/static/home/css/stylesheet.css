@@ -1,0 +1,81 @@
+header{
+  background-color: #fb5b33;
+}
+
+body {
+  background-color: #fb5b33;
+}
+
+#main{
+  background-color:#091815;
+}
+
+#imaginary_container{
+  margin:2%;
+}
+.stylish-input-group .input-group-addon{
+  background: white !important; 
+}
+.stylish-input-group .form-control{
+  border-right:0; 
+  box-shadow:0 0 0;
+}
+.stylish-input-group button{
+  border:0;
+  background:transparent;
+}
+    .carousel-inner > .item > img,
+
+.carousel-inner > .item > a > img {
+    width: 60%;
+    margin: auto;
+}
+
+#carous {
+  background-color:#091815;
+}
+.carousel-indicators {
+  top:-50px;
+}
+
+.carousel-indicators li {
+  background-color: #03110F;
+  border: 0px;
+  bottom: -50px;
+}
+.carousel-indicators .active {
+  background-color: #fb5b33;
+}
+
+.carousel-inner {
+  margin-top:50px;
+  padding-bottom: 50px;
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none
+}
+.section-heading{
+  color: gray;
+}
+
+#contacto {
+  background-color: #fb5b33;
+  padding: 20px;
+}
+
+#footer {
+  background-color: #091815;
+  color: gray;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+#send {
+  border-radius: 0;
+  border: 0;
+  background-color: #e16e61;
+  color: black;
+  padding: 0px 35px;
+  font-size: 32px;
+}
